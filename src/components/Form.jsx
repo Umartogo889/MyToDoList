@@ -18,16 +18,16 @@ const Form = ({ todos, setTodos }) => {
   return (
     <div className="">
       <form className="flex w-full justify-center mt-10">
-        <label className="flex gap-3">
+        <label className="flex gap-1 md:gap-3">
           <input
-            className="w-[250px] px-2 font-poppins rounded-md border border-[#000] outline-none"
+            className="w-[200px] sm:w-[300px] md:w-[250px] px-2 font-poppins rounded-md border border-[#000] outline-none"
             onChange={(e) => SetToDo(e.target.value)}
             value={todo}
             type="text"
           />
           <button
             onClick={addNewTodo}
-            className="bg-yellow-400 font-poppins text-sm py-[7px] px-2 text-[13px]  tracking-wide rounded-md "
+            className="bg-yellow-400 font-poppins text-[10px] h-[30px] ms:text-sm py-1 md:py-[7px] px-2   tracking-wide rounded-md "
           >
             addTodo
           </button>

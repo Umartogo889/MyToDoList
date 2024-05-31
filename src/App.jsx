@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-center items-center h-[100vh] bg-[cover] bg-[url('https://i.pinimg.com/originals/19/45/63/1945638ff4b17895fe014cfa0eb59608.jpg')] ">
-      <div className="w-[450px] backdrop-blur-[220px] rounded-md h-[600px]">
+      <div className="w-[90%] md:w-[450px] backdrop-blur-[220px] rounded-md h-[600px]">
         <Form todos={todos} setTodos={setTodos} />
 
         <ul className="w-full">
