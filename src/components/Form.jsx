@@ -6,9 +6,11 @@ const Form = ({ todos, setTodos }) => {
   function addNewTodo(e) {
     e.preventDefault();
     SetToDo("");
-    setTodos((prev) => {
-      return [...prev, { id: uuidv4(), value: todo, complate: false }];
-    });
+    if (todo) {
+      setTodos((prev) => {
+        return [...prev, { id: uuidv4(), value: todo, complate: false }];
+      });
+    }
   }
 
   //   set todo to local storage
