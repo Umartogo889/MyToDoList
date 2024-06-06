@@ -27,7 +27,7 @@ const Form = ({ todos, setTodos }) => {
           />
           <button
             onClick={addNewTodo}
-            className="bg-yellow-400 font-poppins text-[10px] h-[30px] ms:text-sm py-1 md:py-[7px] px-2   tracking-wide rounded-md "
+            className="bg-yellow-400 font-poppins text-[10px] h-[30px] sm:text-[12px] py-1 md:py-[7px] px-2   tracking-wide rounded-md "
           >
             addTodo
           </button>
